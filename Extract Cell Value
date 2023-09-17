@@ -1,0 +1,18 @@
+
+var kernelDesc = current.Field_value;
+if (kernelDesc) {
+        
+        var SecondCell = kernelDesc.split(' ');
+
+       
+        if (SecondCell.length >= 3) {
+            
+            var secondCellValue = SecondCell[2];
+
+            // Check if the 2nd cell value is not empty
+            if (secondCellValue) {
+                // Set the value in the custom field
+                current.second_cell_value = secondCellValue;
+            }
+        }
+    }
